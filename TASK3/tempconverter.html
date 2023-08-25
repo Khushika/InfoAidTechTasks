@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temperature Converter</title>
+<style>
+  body {
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('https://cdn.wallpapersafari.com/11/55/qnHKN8.gif');
+    background-size: cover;
+  }
+  .converter {
+    background:black;
+    padding: 30px;
+    border-radius: 3px solid rgb(255, 0, 0);
+    box-shadow: 4px 4px 8px rgba(248, 4, 4, 0.753);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  h1 {
+    margin: 0 0 10px;
+    color: #840303;
+  }
+  select, input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #4d4d4d;
+    border-radius: 5px;
+  }
+  button {
+    padding: 8px 16px;
+    background-color: #a40021;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #970229;
+  }
+  .converted-results {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .result {
+    flex: 1;
+    text-align: center;
+    color:aliceblue
+  }
+  .result h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #920510;
+  }
+</style>
+</head>
+<body>
+<div class="converter">
+  <h1>Temperature Converter</h1>
+  <input type="number" id="inputTemp" placeholder="Enter temperature">
+  <select id="inputUnit">
+    <option value="celsius">Celsius</option>
+    <option value="fahrenheit">Fahrenheit</option>
+    <option value="kelvin">Kelvin</option>
+  </select>
+  <button onclick="convertTemperature()">Convert</button>
+  <div class="converted-results">
+    <div class="result">
+      <h2>Celsius</h2>
+      <p id="resultCelsius" class="converted-value"></p>
+    </div>
+    <div class="result">
+      <h2>Fahrenheit</h2>
+      <p id="resultFahrenheit" class="converted-value"></p>
+    </div>
+    <div class="result">
+      <h2>Kelvin</h2>
+      <p id="resultKelvin" class="converted-value"></p>
+    </div>
+  </div>
+</div>
+<footer style="float: right; font-style: italic; font-size: medium; margin-top: -80px; margin-left: 40px; color:aliceblue">
+  <p>&copy; Copyright 2023 by Khushika Reddy</p>
+</footer>
+<script>
+  function convertTemperature() {
+    const inputTemp = parseFloat(document.getElementById('inputTemp').value);
+    const inputUnit = document.getElementById('inputUnit').value;
+    const resultCelsiusElement = document.getElementById('resultCelsius');
+    const resultFahrenheitElement = document.getElementById('resultFahrenheit');
+    const resultKelvinElement = document.getElementById('resultKelvin');
+    
+    let convertedCelsius, convertedFahrenheit, convertedKelvin;
+    
+    if (inputUnit === 'celsius') {
+      convertedCelsius = inputTemp;
+      convertedFahrenheit = (inputTemp * 9/5) + 32;
+      convertedKelvin = inputTemp + 273.15;
+    } else if (inputUnit === 'fahrenheit') {
+      convertedCelsius = (inputTemp - 32) * 5/9;
+      convertedFahrenheit = inputTemp;
+      convertedKelvin = (inputTemp - 32) * 5/9 + 273.15;
+    } else {
+      convertedCelsius = inputTemp - 273.15;
+      convertedFahrenheit = (inputTemp - 273.15) * 9/5 + 32;
+      convertedKelvin = inputTemp;
+    }
+    
+    resultCelsiusElement.textContent = convertedCelsius.toFixed(2) + "°C";
+    resultFahrenheitElement.textContent = convertedFahrenheit.toFixed(2) + "°F";
+    resultKelvinElement.textContent = convertedKelvin.toFixed(2) + "K";
+  }
+</script>
+</body>
+</html>

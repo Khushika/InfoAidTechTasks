@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aahara Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="restaurant.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Aahara</h1>
+        <hr>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#photogallery">PhotoGallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="home">
+        <h1>Welcome to Our Restaurant ...</h1>
+        <p>Experience the finest dining in town with the perfect blend of culinary artistry and impeccable service.</p>
+        <a href="#menu" class="cta-button">Explore Menu</a>
+    </section>
+
+    <scetion id="offers">
+        <div class="offers-section">
+            <h1>Exciting Offers</h1>
+            <p>Indulge in Culinary Delights with Our Irresistible Offers, Elevating Your Dining Experience.</p>
+            <div class="offer">
+                <h2>Special Weekday Discount</h2>
+                <p>Enjoy a 15% discount on all main course dishes every Monday and Tuesday!</p>
+            </div>
+            <div class="offer">
+                <h2>Family Dinner Package</h2>
+                <p>Bring your family of four and get a complimentary dessert platter with every main course.</p>
+            </div>
+            <div class="offer">
+                <h2>Happy Hour Delights</h2>
+                <p>Join us for happy hours from 4pm to 7pm and enjoy 20% off on select appetizers and cocktails.</p>
+            </div>
+        </div>
+    </scetion>
+
+
+    <section id="menu">
+        <center>
+            <h2>Our Menu</h2>
+        </center>
+
+        <div class="tablinks" onclick="openCategory(event, 'appetizer')">Appetizers</div>
+        <div class="tablinks" onclick="openCategory(event, 'maincourse')">Main Course</div>
+        <div class="tablinks" onclick="openCategory(event, 'desserts')">Desserts</div>
+        <div class="tablinks" onclick="openCategory(event, 'beverages')">Beverages</div>
+
+        <div class="menu-category" id="appetizer">
+            <ul class="tabcontent">
+                <li>
+                    <img src="https://kirbiecravings.com/wp-content/uploads/2017/01/baked-calamari.jpg"
+                        alt="Appetizer 1">
+                    <h4>Crispy Calamari Rings</h4>
+                    <p> Tender calamari rings coated in a light and crispy batter, served with zesty marinara sauce.</p>
+                    <p>Price: Rs.200</p>
+                </li>
+                <li>
+                    <img src="https://www.thespruceeats.com/thmb/IzI21XI-Gg07LQnFEu57xYVnA7w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/spinach-and-artichoke-dip-4157518-07-8685813570f34ac89c090084c042266d.jpg"
+                        alt="Appetizer 2">
+                    <h4>Spinach and Artichoke Dip</h4>
+                    <p>Creamy blend of spinach, artichokes, and melted cheeses, served with warm tortilla chips for
+                        dipping.</p>
+                    <p>Price: Rs.350</p>
+                </li>
+                <li>
+                    <img src="https://www.indianveggiedelight.com/wp-content/uploads/2021/08/air-fryer-paneer-tikka-featured.jpg"
+                        alt="Appetizer 3">
+                    <h4>Tandoori Paneer Tikka</h4>
+                    <p>Delicate cubes of paneer (Indian cottage cheese) marinated in aromatic spices and yogurt, grilled
+                        in a tandoor, served with mint chutney.</p>
+                    <p>Price: Rs.180</p>
+                </li>
+                <li>
+                    <img src="https://www.spiceupthecurry.com/wp-content/uploads/2022/09/samosa-chaat-2.jpg"
+                        alt="Appetizer 4">
+                    <h4>Samosa Chaat</h4>
+                    <p>Crispy triangular pastries filled with spiced potatoes and peas, topped with yogurt, chutneys,
+                        and a sprinkle of chaat masala for a burst of flavors.</p>
+                    <p>Price: Rs.60</p>
+                </li>
+                <li>
+                    <img src="https://static.toiimg.com/thumb/93714345.cms?imgsize=72836&width=800&height=800"
+                        alt="Appetizer 5">
+                    <h4>Crispy Masala Corn</h4>
+                    <p>Corn kernels tossed with a medley of spices and herbs, deep-fried to a crispy texture, and served
+                        with a zingy lime dip.</p>
+                    <p>Price: Rs.40</p>
+                </li>
+                <li>
+                    <img src="https://media.istockphoto.com/id/1130325906/photo/crispy-onion-bhajis-with-sweet-chilli-sauce-on-white-wooden-board.jpg?s=612x612&w=0&k=20&c=1Yd1me6XDCF_C6IAM0Y19EbqIjgFUfnFtEre8hw2tuo="
+                        alt="Appetizer 6">
+                    <h4>Vegetable Pakoras</h4>
+                    <p>Assorted vegetables dipped in a spiced chickpea flour batter and deep-fried to crispy perfection,
+                        served with mint chutney.</p>
+                    <p>Price: Rs.50</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-category" id="maincourse">
+            <ul class="tabcontent">
+                <li>
+                    <img src="https://www.licious.in/blog/wp-content/uploads/2020/10/butter-chicken-.jpg"
+                        alt="Main Course 1">
+                    <h4>Butter Chicken</h4>
+                    <p>Tender pieces of marinated chicken cooked in a rich and creamy tomato-based gravy, infused with
+                        aromatic spices.</p>
+                    <p>Price: Rs.200</p>
+                </li>
+                <li>
+                    <img src="https://t4.ftcdn.net/jpg/02/08/41/99/360_F_208419962_enT9YSPQHCmDdkcYOLum8XhpsOPlLtZq.jpg"
+                        alt="Main Course 2">
+                    <h4>Palak Paneer</h4>
+                    <p>Soft paneer cubes simmered in a vibrant spinach and fenugreek gravy, delicately spiced and
+                        served.</p>
+                    <p>Price: Rs180</p>
+                </li>
+                <li>
+                    <img src="https://t3.ftcdn.net/jpg/04/41/20/18/360_F_441201852_XQqp1wbAQj9udOC3iT7D0ahKgaf71bns.jpg"
+                        alt="Main Course 3">
+                    <h4>Chicken Biryani</h4>
+                    <p>Fragrant basmati rice cooked with succulent pieces of marinated chicken, aromatic spices,
+                        saffron, and caramelized onions. Served with raita.</p>
+                    <p>Price: Rs.280</p>
+                </li>
+                <li>
+                    <img src="https://media.istockphoto.com/id/1170374719/photo/dal-makhani-at-dark-background.jpg?s=612x612&w=0&k=20&c=49yLaUAE2apakVk2AAiRQimZd98WtSjIQ0hzCzWsmns="
+                        alt="Main Course 4">
+                    <h4>Dal Makhani</h4>
+                    <p>A velvety combination of black lentils and kidney beans slow-cooked with cream, butter, and
+                        aromatic spices.</p>
+                    <p>Price: Rs.160</p>
+                </li>
+                <li>
+                    <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2018/03/Garlic-Butter-nan-recipe.jpg"
+                        alt="Main Course 5">
+                    <h4>Garlic Naan</h4>
+                    <p>Soft and pillowy Indian bread infused with fresh garlic and butter, baked to golden perfection in
+                        a tandoor oven.</p>
+                    <p>Price: Rs.25</p>
+                </li>
+                <li>
+                    <img src="https://www.funfoodfrolic.com/wp-content/uploads/2022/11/Jeera-Rice-Blog-500x500.jpg"
+                        alt="Main Course 6">
+                    <h4>Jeera Rice</h4>
+                    <p>Fluffy and fragrant basmati rice infused with the warm and earthy flavors of cumin seeds.</p>
+                    <p>Price: Rs.100</p>
+                </li>
+                <li>
+                    <img src="https://yellowchilis.com/wp-content/uploads/2020/12/indian-vegetable-egg-masala-fried-rice.jpg"
+                        alt="Main Course 7">
+                    <h4> Egg Fried Rice</h4>
+                    <p>A flavorful medley of cooked rice, stir-fried with an assortment of vegetables,eggs, and aromatic
+                        seasonings, creating a harmonious blend of textures and tastes</p>
+                    <p>Price: Rs.120</p>
+                </li>
+                <li>
+                    <img src="https://media.istockphoto.com/id/846795768/photo/indian-naan-bread.jpg?s=612x612&w=0&k=20&c=9cwLMT6MRNWebCllwMlSxfJnoEXkAMHCj7i6EV0SWPM="
+                        alt="Main Course 8">
+                    <h4>Butter Naan</h4>
+                    <p>Soft, oven-baked Indian bread brushed with melted butter, resulting in a tender and slightly
+                        crispy exterior, perfect for sopping up rich gravies and curries.</p>
+                    <p>Price: Rs.30</p>
+                </li>
+                <li>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1c/82/ce/ad/roomali-roti.jpg"
+                        alt="Main Course 7">
+                    <h4>Rumali Roti</h4>
+                    <p>A thin, hand-stretched bread known as "handkerchief bread" due to its sheer and delicate texture.
+                        It's a versatile accompaniment to a variety of dishes, folding easily and adding an extra layer
+                        of enjoyment to every bite.</p>
+                    <p>Price: Rs.15</p>
+                </li>
+                <li>
+                    <img src="https://garamasala.in/wp-content/uploads/2023/02/310fd74f-3501-4325-8d2e-6c9ad5f63236.jpg"
+                        alt="Main Course 8">
+                    <h4>Plain Roti</h4>
+                    <p>A staple Indian bread made from whole wheat flour, cooked on a griddle until puffed and lightly
+                        browned.</p>
+                    <p>Price: Rs.10</p>
+                </li>
+                <li>
+                    <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2019/11/Paneer-Butter-Masala-Recipe-1.jpg"
+                        alt="Main Course 7">
+                    <h4>Paneer Butter Masala</h4>
+                    <p>Cubes of soft paneer (cottage cheese) cooked in a creamy and mildly spiced tomato-based gravy,
+                        rich with butter and balanced with aromatic spices. </p>
+                    <p>Price: Rs.180</p>
+                </li>
+                <li>
+                    <img src="https://media.istockphoto.com/id/1227594550/photo/chicken-curry-creamy-chicken-butter.jpg?s=612x612&w=0&k=20&c=U9SzDx7mjCA5iS1qb8cDUNNkIGD6mJJhwLvEHXL-OlE="
+                        alt="Main Course 8">
+                    <h4>Chicken Tikka Masala</h4>
+                    <p>Succulent pieces of marinated chicken cooked in a luscious tomato and yogurt-based sauce, infused
+                        with a blend of Indian spices. A classic and indulgent dish that's full of flavor.</p>
+                    <p>Price: Rs.220</p>
+                </li>
+                <li>
+                    <img src="https://media.istockphoto.com/id/1168154921/photo/comforting-curd-rice-is-a-popular-dish-from-south-india-with-yogurt-and-then-tempered-with.jpg?s=612x612&w=0&k=20&c=4FFlaBSNY3KhVARVXSIWnrZsrHv4b_ZS81xc1q4Miz8="
+                        alt="Main Course 9">
+                    <h4>Curd Rice</h4>
+                    <p>A cooling and comforting South Indian dish made by mixing cooked rice with yogurt (curd), often
+                        tempered with spices, curry leaves, and sometimes garnished with grated carrots or pomegranate
+                        seeds.</p>
+                    <p>Price: Rs.70</p>
+                </li>
+                <li>
+                    <img src="https://media.istockphoto.com/id/925340982/photo/cooked-plain-white-basmati-rice-in-terracotta-bowl-over-plain-or-wooden-background.jpg?s=612x612&w=0&k=20&c=GiT3GVbjjvB6SDUbzMans0DypsMvsNersfH0foA-saw="
+                        alt="Main Course 10">
+                    <h4>Basmati Rice</h4>
+                    <p>A long-grain rice known for its fragrant aroma and fluffy texture when cooked</p>
+                    <p>Price: 60</p>
+                </li>
+                <li>
+                    <img src="https://media.istockphoto.com/id/491090528/photo/cooked-rice.jpg?s=612x612&w=0&k=20&c=WNeDEUEioyyk6FQZQrVMrtFMDVdtbwtK951eZ8q5FNY="
+                        alt="Main Course 11">
+                    <h4>Plain Rice</h4>
+                    <p>Cooked rice that is simply prepared without any additional seasonings or ingredients</p>
+                    <p>Price: Rs.50</p>
+                </li>
+                <li>
+                    <img src="https://img.freepik.com/premium-photo/indian-vegetable-pulav-biryani-made-using-basmati-rice-served-terracotta-bowl-selective-focus_466689-55615.jpg"
+                        alt="Main Course 12">
+                    <h4>Vegetable Biryani</h4>
+                    <p>a flavorful Indian rice dish where fragrant basmati rice is cooked with an assortment of
+                        vegetables and aromatic spices.</p>
+                    <p>Price: Rs.200</p>
+                </li>
+                <li>
+                    <img src="https://t4.ftcdn.net/jpg/04/03/73/23/360_F_403732359_edrxlInZnXU0XX8yfVPbeNUtH1hnZAd4.jpg"
+                        alt="Main Course 13">
+                    <h4>Chicken Parotta</h4>
+                    <p> A dish made of flaky, layered flatbread (parotta) and tender pieces of cooked chicken.</p>
+                    <p>Price: Rs.150</p>
+                </li>
+
+                <li>
+                    <img src="https://media.istockphoto.com/id/1189079893/photo/aloo-paratha-with-lassi-indian-potato-stuffed-flatbread-with-butter-on-top-served-with-fresh.jpg?s=612x612&w=0&k=20&c=KS-HPML7jXEVCD4edsaaAj6uLVqZUI7sxdSf0CtQKsc="
+                        alt="Main Course 14">
+                    <h4>Aloo Parotta</h4>
+                    <p>a scrumptious Indian flatbread made by stuffing unleavened dough with a spiced mashed potato
+                        mixture. </p>
+                    <p>Price: Rs. 120</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-category" id="desserts">
+            <ul class="tabcontent">
+                <li>
+                    <img src="https://i0.wp.com/aartimadan.com/wp-content/uploads/2020/11/milk-powder-gulab-jamuns.jpg?fit=1000%2C561&ssl=1"
+                        alt="dessert 1">
+                    <h4>Gulab Jamun</h4>
+                    <p>Deep-fried milk dumplings soaked in a fragrant rose-infused sugar syrup, offering a
+                        melt-in-the-mouth experience with a hint of floral sweetness.</p>
+                    <p>Price: Rs. 20</p>
+                </li>
+                <li>
+                    <img src="https://media.istockphoto.com/id/515894530/photo/traditional-rasmalai-or-ras-malai-indian-dessert-bengali-sweet.jpg?s=612x612&w=0&k=20&c=5sSpJ3o5fwcGQPWd4VoeGu_FlWImsFKxW8Zgzl5yClE="
+                        alt="dessert 2">
+                    <h4>Rasmalai</h4>
+                    <p>Soft cottage cheese dumplings immersed in a creamy saffron and cardamom-flavored milk syrup,
+                        providing a luscious and aromatic dessert.</p>
+                    <p>Price: Rs.20</p>
+                </li>
+                <li>
+                    <img src="https://arpitasfoodpod.com/wp-content/uploads/2021/04/E39F08E9-82CA-4C33-81AD-C110EE05740F.jpeg"
+                        alt="dessert 3">
+                    <h4>Kesar Badam Kulfi</h4>
+                    <p>A rich and creamy saffron-infused ice cream garnished with chopped almonds, capturing the essence
+                        of traditional Indian frozen desserts.</p>
+                    <p>Price: Rs.25</p>
+                </li>
+                <li>
+                    <img src="https://c4.wallpaperflare.com/wallpaper/310/851/662/5c1c93c50240f-wallpaper-preview.jpg"
+                        alt="dessert 4">
+                    <h4>Chocolate Fondant</h4>
+                    <p>A warm and decadent chocolate cake with a gooey molten center, served with a scoop of vanilla ice
+                        cream for a perfect balance of textures and flavors.</p>
+                    <p>Price: Rs. 25</p>
+                </li>
+                <li>
+                    <img src="https://www.closetcooking.com/wp-content/uploads/2008/05/Mango-Coconut-Rice-Pudding-500.jpg"
+                        alt="dessert 5">
+                    <h4>Mango Coconut Rice Pudding</h4>
+                    <p>A fusion dessert featuring creamy rice pudding infused with tropical mango and coconut flavors,
+                        presenting a comforting and exotic delight.</p>
+                    <p>Price: Rs.20</p>
+                </li>
+                <li>
+                    <img src="https://www.modernfoods.co.in/wp-content/uploads/2017/05/shahitukda555.png"
+                        alt="dessert 2">
+                    <h4>Shahi Tukda</h4>
+                    <p>A royal treat made of fried bread slices soaked in saffron-infused milk, garnished with slivers
+                        of almonds and pistachios, and indulgently sweetened.</p>
+                    <p>Price: Rs.25</p>
+                </li>
+                <li>
+                    <img src="https://www.cookwithmanali.com/wp-content/uploads/2019/06/Fruit-Custard-500x500.jpg"
+                        alt="dessert 1">
+                    <h4>Fruit Custard</h4>
+                    <p>A delightful medley of mixed fruits suspended in luscious vanilla custard, offering a refreshing
+                        and light conclusion to your meal.</p>
+                    <p>Price: Rs.20</p>
+                </li>
+                <li>
+                    <img src="https://i0.wp.com/cookingfromheart.com/wp-content/uploads/2020/05/Mango-Yogurt-Parfait-with-Homemade-Granola-2.jpg?resize=683%2C1024&ssl=1"
+                        alt="dessert 2">
+                    <h4>Mango Lassi Parfait</h4>
+                    <p> Layers of creamy mango lassi (yogurt drink) alternated with crushed digestive biscuits, creating
+                        a refreshing and delightful dessert.</p>
+                    <p>Price: Rs.25</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-category" id="beverages">
+            <ul class="tabcontent">
+                <li>
+                    <img src="https://recipes.wellcurve.in/wp-content/uploads/2022/03/Masala-Tea.jpg" alt="beverage 1">
+                    <h4>Masala Chai</h4>
+                    <p>A spiced tea infused with aromatic Indian spices like cinnamon, cardamom, and ginger, providing a
+                        warming and flavorful beverage.</p>
+                    <p>Price: Rs. 15</p>
+                </li>
+                <li>
+                    <img src="https://yummynoises.com/wp-content/uploads/2020/05/Frozen-Mint-Lemonade-Featured.jpeg"
+                        alt="beverage 2">
+                    <h4>Fresh Mint Lemonade</h4>
+                    <p>A revitalizing concoction of freshly squeezed lemon juice, mint leaves, and a touch of sweetness,
+                        delivering a zesty and cooling sensation.</p>
+                    <p>Price: Rs. 45</p>
+                </li>
+                <li>
+                    <img src="https://static.toiimg.com/thumb/54525751.cms?imgsize=110610&width=800&height=800"
+                        alt="beverage 3">
+                    <h4>Virgin Mojito</h4>
+                    <p>A mocktail version of the classic mojito, featuring muddled fresh mint, lime, and soda water,
+                        resulting in a refreshing and bubbly drink.</p>
+                    <p>Price: Rs 50</p>
+                </li>
+                <li>
+                    <img src="https://shahzadidevje.com/wp-content/uploads/2020/12/Vegan-Rose-Falooda-Recipe-Desilicious-RD-4.jpg"
+                        alt="beverage 4">
+                    <h4>Rose Falooda</h4>
+                    <p>A delightful dessert beverage combining rose-flavored milk, vermicelli noodles, sweet basil
+                        seeds, and a scoop of ice cream, resulting in a harmonious blend of textures and tastes.</p>
+                    <p>Price: Rs.45</p>
+                </li>
+                <li>
+                    <img src="https://www.funfoodfrolic.com/wp-content/uploads/2020/06/Mango-Iced-Tea-Thumbnail.jpg"
+                        alt="beverage 5">
+                    <h4>Mango Iced Tea</h4>
+                    <p>A fruity twist on the traditional iced tea, infused with the essence of ripe mangoes, creating a
+                        delightful balance between sweet and tea flavors.</p>
+                    <p>Price: Rs.50</p>
+                </li>
+                <li>
+                    <img src="https://media.istockphoto.com/id/681493700/photo/frappuccino-in-takeaway-cup.jpg?s=612x612&w=0&k=20&c=lA2Fj-ILerew4wgDvqsNmte5oCHXKssP9J-vdWs-J8s="
+                        alt="beverage 6">
+                    <h4>Iced Coffee Frappe</h4>
+                    <p>Chilled coffee infused with ice and a touch of sweetness, crowned with a swirl of whipped cream,
+                        perfect for coffee aficionados.</p>
+                    <p>Price: Rs.50</p>
+                </li>
+                <li>
+                    <img src="https://img.freepik.com/free-photo/freshly-squeezed-organic-orange-juice_53876-42486.jpg?w=2000"
+                        alt="beverage 7">
+                    <h4>Freshly Squeezed Orange Juice</h4>
+                    <p>A revitalizing glass of pure, hand-pressed orange juice, bursting with natural sweetness and
+                        Vitamin C goodness.</p>
+                    <p>Price: Rs.35</p>
+                </li>
+                <li>
+                    <img src="https://img.freepik.com/free-photo/vertical-closeup-plastic-cup-cold-coffee-with-vanilla-cream_181624-57827.jpg"
+                        alt="beverage 8">
+                    <h4>Cold Coffee</h4>
+                    <p>A delightful and chilled coffee beverage made by blending rich coffee with milk, sweeteners, and
+                        ice, creating a smooth and invigorating treat perfect for warm days or anytime refreshment.</p>
+                    <p>Price: Rs.55</p>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+    </section>
+
+    <section id="reservation">
+        <h2>Make a Reservation</h2>
+        <form>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time">
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests">
+            <label for="requests">Special Requests:</label>
+            <textarea id="requests" name="requests"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Aahara is a renowned restaurant that has been serving exquisite Indian Cuisine for over a decade. <br>Our
+            mission is to provide a memorable dining experience by combining exceptional food, warm hospitality, and a
+            charming ambiance.<br> Our talented chefs,create culinary masterpieces that will delight your taste buds.
+        </p>
+        <img id="history"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Vienna_Caf%C3%A9%2C_London%2C_1897.jpg/1200px-Vienna_Caf%C3%A9%2C_London%2C_1897.jpg"
+            alt="Restaurant History">
+        <p>Take a journey through our restaurant's history and milestones:</p>
+        <div class="gallery">
+            <div class="grow">
+                <img src="https://www.yammagazine.com/wp-content/uploads/2022/02/Best-Restaurant-Award-logo-1024x1024.png"
+                    alt="Milestone 1">
+                <img src="https://zomatoblog.com/wp-content/uploads/2023/04/blog-image-01-scaled-1.jpg"
+                    alt="Milestone 2">
+                <img src="https://cdn.worldculinaryawards.com/shields/7/2022-nominees-shield.png" alt="Milestone 3">
+            </div>
+        </div>
+    </section>
+        
+
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="image-gallery">
+            <img src="https://media.istockphoto.com/id/1093661558/photo/indian-dish-chicken-tikka-masala.jpg?s=612x612&w=0&k=20&c=HyD_ak5-tCeEPooVnTnoCERfEKArb5s7KikTKe3ZoLU="
+                alt="Image 1">
+            <img src="https://media.istockphoto.com/id/1290444763/photo/assorted-of-indian-dish-with-curry-dish-naan-chicken.webp?b=1&s=170667a&w=0&k=20&c=1DcZ93vMurs90VV2u6WqDxwSTVBdS18_jgIle04J218="
+                alt="Image 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEv8DbRp2y5AQpfE1cUJbvmUqdyQGHcTYfjQ&usqp=CAU"
+                alt="Image 3">
+            <img src="https://w0.peakpx.com/wallpaper/514/512/HD-wallpaper-indian-restaurant-san-francisco-deccan-house-sf-north-indian-food.jpg"
+                alt="Image 4">
+            <img src="data:image/jpeg;base64,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"
+                alt="Image 5">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcmzpHza4LT-Ih1TtQJikuYWsX1fKM4qhZIw&usqp=CAU"
+                alt="Image 6">
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For reservations or inquiries, please contact us:</p>
+        <ul>
+            <li>Address: Aahara Restaurant,Chennai, Tamil Nadu.</li>
+            <li>Phone: 9392233837</li>
+            <li>Email: aahararestaurant@gmail.com</li>
+        </ul>
+
+    <div class="social-media">
+  <a href="#" class="social-icon">
+    <i class="fab fa-facebook"></i>
+  </a>
+  <a href="#" class="social-icon">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="#" class="social-icon">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="#" class="social-icon">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="#" class="social-icon">
+    <i class="fab fa-pinterest"></i>
+  </a>
+  </div>
+</section>
+        <footer style="font-size: 18px;">
+            <p> Aahara &copy; 2023. All rights reserved by Khushika Reddy.</p>
+        </footer>
+</body>
+<script>
+    function openCategory(evt, categoryname) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("menu-category");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active");
+        }
+        document.getElementById(categoryname).style.display = "block";
+        evt.currentTarget.classList.add("active");
+    }
+
+</script>
+
+</body>
+
+</html>
